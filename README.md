@@ -6,7 +6,7 @@
 - Add Student
 - Search Student
 - Update Marks
-- Delete Student
+- Delete Students
 
 ## Concepts Used
 - OOP
