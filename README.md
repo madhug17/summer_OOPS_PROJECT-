@@ -1,12 +1,12 @@
 # summer_OOPS_PROJECT-# Student Management System
 
+# Student Management System
+
 ## Features
 - Add Student
 - Search Student
 - Update Marks
-- Delete Student
-- Find Topper
-- Save to File
+- Delete Students
 
 ## Concepts Used
 - OOP
