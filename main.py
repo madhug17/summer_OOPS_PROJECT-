@@ -1,4 +1,4 @@
-from student import Student 
+from student import Student  # the student is file name and Student is Class name That is the format man 
 from school import School
 
 School = School("School of Gods")
@@ -9,8 +9,8 @@ s4 = Student ("Gohan",2081,91)
 s5 = Student ("Trunks",2083,89)
 
 School.add_student(s1)
-School.add_student(s2)
-School.add_student(s3)
-School.add_student(s4)
-School.add_student(s5)
+#School.add_student(s2)
+#School.add_student(s3)
+#School.add_student(s4)
+#School.add_student(s5)
 School.show_student()
