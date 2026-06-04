@@ -6,7 +6,7 @@ class School:
         self.students.append(student)
     def show_student(self):
         for student in self.students:
-            student.display()
+            student.display() # We are using display from the student.py file 
             print(20*"_")
 
         
