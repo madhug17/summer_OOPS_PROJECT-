@@ -14,6 +14,13 @@ class School:
                 student.display()
                 return
         print("Student not found ")
+    def update_student(self,roll_num,new_marks):
+        for student in self.students:
+            if student.roll_num == roll_num:
+                student.set_marks(new_marks)
+                print("Updated the marks successfully")
+                return
+        print("Student not found")
 
 
         
