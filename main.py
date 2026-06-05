@@ -1,20 +1,100 @@
-from student import Student  # the student is file name and Student is Class name That is the format man 
+from student import Student
 from school import School
 
-School = School("School of Gods")
-s1 = Student ("Madhu",2079,98)
-s2 = Student ("Goku",2080,99)
-s3 = Student ("Vegita",2082,95)
-s4 = Student ("Gohan",2081,91)
-s5 = Student ("Trunks",2083,89)
+# Create School Object
+school = School("School of Gods")
 
-School.add_student(s1)
-#School.add_student(s2)
-#School.add_student(s3)
-#School.add_student(s4)
-#School.add_student(s5)
-School.show_student()
-School.update_student("2079",99)
-School.show_student()
-School.delete_student(2079)
-School.show_student()
+# Create Student Objects
+s1 = Student("Madhu", 2079, 98)
+s2 = Student("Goku", 2080, 99)
+s3 = Student("Vegita", 2082, 95)
+s4 = Student("Gohan", 2081, 91)
+s5 = Student("Trunks", 2083, 89)
+while True:
+    
+    print("\n1. Add Student")
+    print("2. Show Students")
+    print("3. Search Student")
+    print("4. Update Student")
+    print("5. Delete Student")
+    print("6. Find Topper")
+    print("7. Save Data")
+    print("8. Load Data")
+    print("9. Exit")
+
+    choice = input("Enter choice: ")
+    if choice =="1":
+        name = input("Enter the name:\n")
+        roll_num = int(input("Student Roll_num:\n"))
+        marks = int(input("Enter the marks:\n"))
+        student= Student(name,roll_num,marks)
+        school.add_student(student)
+        print("Student added Successful")
+    elif choice == "2":
+        school.show_student()
+    elif choice == "3":
+        roll_num = int(input("Enter the roll_num:\n"))
+        school.search(roll_num)
+    elif choice=="4":
+        roll_num = int(input("Enter the roll_num:\n"))
+        marks= int(input("Enter the marks"))
+        school.update_student(roll_num,marks)
+    elif choice =="5":
+        roll_num = int(input("Enter the roll_num:\n"))
+        school.delete_student(roll_num)
+    elif choice == "6":
+        school.Topper()
+    elif choice == "7":
+        school.save_student_data()
+    elif choice == "8":
+        school.load_student()
+    elif choice == "9":
+        print("Bye Boi!")
+        break
+         
+         
+         
+         
+         
+
+
+
+
+    
+    
+    
+## Add Students
+#school.add_student(s1)
+#school.add_student(s2)
+#school.add_student(s3)
+#school.add_student(s4)
+#school.add_student(s5)
+#
+#print("\n--- All Students ---")
+#school.show_student()
+#
+#print("\n--- Update Student ---")
+#school.update_student(2079, 100)
+#school.show_student()
+#
+#print("\n--- Delete Student ---")
+#school.delete_student(2083)
+#school.show_student()
+#
+#print("\n--- Search Student ---")
+#school.search(2080)
+#
+#print("\n--- Topper ---")
+#school.Topper()
+#
+#print("\n--- Save Data ---")
+#school.save_student_data()
+#
+## Clear current data to test loading
+#school.students.clear()
+#
+#print("\n--- Load Data ---")
+#school.load_student()
+#
+#print("\n--- Students After Loading ---")
+#school.show_student()
