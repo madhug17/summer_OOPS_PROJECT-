@@ -21,6 +21,11 @@ class School:
                 print("Updated the marks successfully")
                 return
         print("Student not found")
+    def delete_student(self,roll_num):
+        for student in self.students:
+            if student.roll_num == roll_num:
+                self.students.remove(student)
+        print("Student not found")
 
 
         
