@@ -4,6 +4,12 @@ class School:
         self.name = name
         self.students = []
     def add_student(self,student):
+        for s in self.students:
+            if s.roll_num == student.roll_num:
+                print("Roll number already exists")
+                return 
+            self.students.append(student)
+            print("Student added successfully")
         #self.students = int(input("Enter the Student Name:\n"))
         self.students.append(student)
     def show_student(self):
