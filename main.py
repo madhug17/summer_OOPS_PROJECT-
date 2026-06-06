@@ -11,7 +11,7 @@ s3 = Student("Vegita", 2082, 95)
 s4 = Student("Gohan", 2081, 91)
 s5 = Student("Trunks", 2083, 89)
 while True:
-    
+    #print("real madrid") # checking git diff 
     print("\n1. Add Student")
     print("2. Show Students")
     print("3. Search Student")
@@ -20,17 +20,24 @@ while True:
     print("6. Find Topper")
     print("7. Save Data")
     print("8. Load Data")
-    print("9. Exit")
+    print("9. rank_students")
+    print("10. showing student from loadfile")
+    print("11. Exit")
 
     choice = input("Enter choice: ")
     if choice =="1":
         name = input("Enter the name:\n")
         roll_num = int(input("Student Roll_num:\n"))
         marks = int(input("Enter the marks:\n"))
-        student= Student(name,roll_num,marks)
-        school.add_student(student)
+        if marks < 0 or marks>100:
+            print("Invalid marks. Marks must be between 0 and 100.")
+        else:
+           student= Student(name,roll_num,marks)
+           school.add_student(student)
+           print("SuccessFully Student added")
         print("Student added Successful")
     elif choice == "2":
+        print(20*"-")
         school.show_student()
     elif choice == "3":
         roll_num = int(input("Enter the roll_num:\n"))
@@ -48,7 +55,11 @@ while True:
         school.save_student_data()
     elif choice == "8":
         school.load_student()
-    elif choice == "9":
+    elif choice == '9':
+        school.rank_student()
+    elif choice == "10":
+        school.show_load()
+    elif choice == "11":
         print("Bye Boi!")
         break
          

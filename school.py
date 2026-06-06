@@ -44,6 +44,11 @@ class School:
                     f"{student.name},{student.roll_num},{student.get_marks()}\n"
                 )
         print("Students saved successfully")
+    def show_load(self):
+        with open("Student_data_project","r")as f:
+            for line in f:
+                print(line.split())
+        print("Successfully Showed the Students")
     def load_student(self):
         with open("Student_data_project","r") as f:
             for line in f:
@@ -52,5 +57,12 @@ class School:
                     name, int(roll_num),int(marks)
                 )
                 self.students.append(student)
+    def rank_student(self):
+        self.rank_students = sorted(
+            self.students , key=lambda student: student.get_marks(),
+            reverse=True
+        )
+        for rank, student in enumerate(self.rank_students,start=1):
+            print(f"{rank}.{student.name} - {student.get_marks()}")
 
         
