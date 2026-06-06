@@ -34,7 +34,10 @@ while True:
         else:
            student= Student(name,roll_num,marks)
            school.add_student(student)
-           print("SuccessFully Student added")
+        #if school.add_student(student):
+        #    print("Student added successfully")
+        #else:
+        #    print("Student not added")
         print("Student added Successful")
     elif choice == "2":
         print(20*"-")
