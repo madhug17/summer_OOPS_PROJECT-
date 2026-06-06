@@ -22,7 +22,9 @@ while True:
     print("8. Load Data")
     print("9. rank_students")
     print("10. showing student from loadfile")
-    print("11. Exit")
+    print("11. sort_student_marks ")
+    print("12. Sorted_name")
+    print("13. Exit")
 
     choice = input("Enter choice: ")
     if choice =="1":
@@ -63,19 +65,13 @@ while True:
     elif choice == "10":
         school.show_load()
     elif choice == "11":
+        school.sort_student_marks()
+    elif choice == "12":
+        school.sort_student_name()
+    elif choice == "13":
         print("Bye Boi!")
         break
          
-         
-         
-         
-         
-
-
-
-
-    
-    
     
 ## Add Students
 #school.add_student(s1)
