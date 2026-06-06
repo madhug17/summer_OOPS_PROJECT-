@@ -73,6 +73,7 @@ while True:
         break
          
 print("Main Commit 1")
+print("ADDED RANKING FEATURE")
 ## Add Students
 #school.add_student(s1)
 #school.add_student(s2)
