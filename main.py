@@ -72,7 +72,7 @@ while True:
         print("Bye Boi!")
         break
          
-    
+print("Hello charizar")
 ## Add Students
 #school.add_student(s1)
 #school.add_student(s2)
