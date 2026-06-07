@@ -1,18 +1,14 @@
 # summer_OOPS_PROJECT-# Student Management System
 
 # Student Management System
-<<<<<<< HEAD
-## Changed in the repo file 
-=======
 - SuperMario
->>>>>>> f451283 (cherry pick test)
 ## Features
 - Add Student
 - Search Student
 - Update Marks
 - Delete Students
 # This line was added in feature-test
-## Concepts Used
+## Concepts Usedd
 - OOP
 - Inheritance
 - Encapsulation
