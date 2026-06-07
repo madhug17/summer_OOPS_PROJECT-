@@ -1,7 +1,11 @@
 # summer_OOPS_PROJECT-# Student Management System
 
 # Student Management System
+<<<<<<< HEAD
 ## Changed in the repo file 
+=======
+- SuperMario
+>>>>>>> f451283 (cherry pick test)
 ## Features
 - Add Student
 - Search Student
